@@ -1,0 +1,33 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "XRPGyro": {
+        "header": {
+          "open": true
+        }
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/SmartDashboard/Controller Type": "String Chooser",
+      "/SmartDashboard/SendableChooser[1]": "String Chooser"
+    },
+    "windows": {
+      "/SmartDashboard/Controller Type": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/SmartDashboard/SendableChooser[1]": {
+        "window": {
+          "visible": true
+        }
+      }
+    }
+  },
+  "NetworkTables Info": {
+    "visible": true
+  }
+}
