@@ -33,7 +33,6 @@ public class RobotContainer {
   private final Drivetrain m_drivetrain = new Drivetrain();
   private final XRPOnBoardIO m_onboardIO = new XRPOnBoardIO();
   private final Kicker m_kicker = new Kicker();
-  private int m_angle = 0;
 
   // Assumes a gamepad plugged into channel 0
   private final Joystick m_controller = new Joystick(0);
@@ -45,7 +44,8 @@ public class RobotContainer {
   public RobotContainer() {
     // Configure the button bindings
     configureButtonBindings();
-    m_kicker.setAngle(m_angle);
+    // Set kicker to be ready to kick.
+    m_kicker.reset();
   }
 
   /**
